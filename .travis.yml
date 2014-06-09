@@ -1,6 +1,6 @@
 os:
     -linux
 before_install: sudo apt-get update
-install: sudo apt-get install qt
+install: sudo apt-get install qtdeclarative5-dev
 script: echo "success"
 after_success: echo "after success"
