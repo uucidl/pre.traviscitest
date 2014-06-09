@@ -1,0 +1,6 @@
+os:
+	-linux
+before_install: sudo apt-get update
+install: sudo apt-get install qt
+script: echo "success"
+after_success: echo "after success says: ${TRAVIS_TEST_RESULT}"
