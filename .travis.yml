@@ -4,7 +4,7 @@ before_install:
     - sudo apt-add-repository --yes ppa:ubuntu-sdk-team/ppa
     - sudo apt-get --yes update
 install:
-    - sudo apt-get 0install-core
+    - sudo apt-get install 0install-core
     - sudo apt-get install qtdeclarative5-dev
 script: echo "success"
 after_success: echo "after success"
