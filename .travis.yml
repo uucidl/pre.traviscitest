@@ -4,8 +4,7 @@ before_install:
     - sudo apt-add-repository --yes ppa:ubuntu-sdk-team/ppa
     - sudo apt-get --yes update
 install:
-    - sudo apt-get install 0install-core
-    - sudo apt-get install qtdeclarative5-dev
+    - sudo apt-get install p7zip
     - scripts/install-qt Qt5.3.0
     - find Qt5.3.0 -print
 script: echo "success"
