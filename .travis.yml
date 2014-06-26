@@ -1,7 +1,6 @@
 os:
     - linux
 before_install:
-    - sudo apt-add-repository --yes ppa:ubuntu-sdk-team/ppa
     - sudo apt-get --yes update
 install:
     - sudo apt-get install p7zip

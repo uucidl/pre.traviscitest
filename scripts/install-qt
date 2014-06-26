@@ -8,4 +8,4 @@ echo ${INSTALLER_UNPACK_DIR}
 wget http://download.qt-project.org/official_releases/qt/5.3/5.3.0/${INSTALLER_NAME}
 chmod +x ${INSTALLER_NAME}
 ./"${INSTALLER_NAME}" --dump-binary-data -o "${INSTALLER_UNPACK_DIR}"
-( mkdir "${DEST}" ; cd "${DEST}" ; for file in "${INSTALLER_UNPACK_DIR}"/qt.*/*7z ; do 7zr x $file | grep -v ^Extract ; done )
+( mkdir "${DEST}" ; cd "${DEST}" ; for file in "${INSTALLER_UNPACK_DIR}"/qt.*.gcc_64/*7z ; do 7zr x $file | grep -v ^Extract ; done )
