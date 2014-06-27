@@ -4,10 +4,11 @@ before_install:
     - sudo apt-get --yes update
 install:
     - sudo apt-get install p7zip
-    - scripts/install-qt Qt5.3.0
-    - find Qt5.3.0 -print
+    - scripts/install-qt Qt
+    - find Qt -print
+    - export PATH=$TRAVIS_BUILD_DIR/Qt/5.3/gcc_64/bin:$PATH
 script:
     - env
-    - $TRAVIS_BUILD_DIR/Qt5.3.0/bin/qmake -version
+    - $TRAVIS_BUILD_DIR/Qt/5.3/gcc_64/bin/qmake -version
     - echo "success"
 after_success: echo "after success"
