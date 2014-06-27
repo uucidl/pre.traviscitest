@@ -6,5 +6,8 @@ install:
     - sudo apt-get install p7zip
     - scripts/install-qt Qt5.3.0
     - find Qt5.3.0 -print
-script: echo "success"
+script:
+    - env
+    - $TRAVIS_BUILD_DIR/Qt5.3.0/bin/qmake -version
+    - echo "success"
 after_success: echo "after success"
